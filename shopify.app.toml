@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "ddd13fe5fbbf1f5d9888979bb0fd5218"
+name = "remic-client-book"
+handle = "remic-client-book"
+application_url = "https://guarantees-couple-wellness-grown.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "sziro.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://guarantees-couple-wellness-grown.trycloudflare.com/auth/callback",
+  "https://guarantees-couple-wellness-grown.trycloudflare.com/auth/shopify/callback",
+  "https://guarantees-couple-wellness-grown.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
