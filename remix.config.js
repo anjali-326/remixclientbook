@@ -18,6 +18,7 @@ const config = {
   serverModuleFormat: "cjs",
   dev: { port: process.env.HMR_SERVER_PORT || 8002 },
   future: {},
+  appUrl: process.env.SHOPIFY_APP_URL,
 };
 
 export default config;
